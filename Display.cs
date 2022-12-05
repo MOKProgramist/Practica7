@@ -11,9 +11,9 @@ namespace Practica7
     {
         public string Brand { get; set; }
         public string ScreenSize { get; set; }
-        public DateOnly YearOfIssue { get; set; }
+        public DateTime YearOfIssue { get; set; }
 
-        public Display(string brand, string screenSize, DateOnly yearOfIssue)
+        public Display(string brand, string screenSize, DateTime yearOfIssue)
         {
             Brand = brand;
             ScreenSize = screenSize;
