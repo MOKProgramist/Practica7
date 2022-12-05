@@ -8,5 +8,9 @@ namespace Practica7
 {
     internal class Computer
     {
+        public virtual void Print()
+        {
+            Console.WriteLine("Вывод информации о чем-то");
+        }
     }
 }
