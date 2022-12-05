@@ -17,7 +17,7 @@ namespace Practica7
         // наличие вентилятора
         public bool IsFan {get; set;}
 
-        public Processor(string brand, string power, bool isFan) 
+        public Processor(string brand, string power, bool isFan = false) 
         {
            Brand = brand;
             Power = power;
