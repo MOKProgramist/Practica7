@@ -34,7 +34,7 @@ namespace Practica7
 
         public virtual void Print()
         {
-            Console.WriteLine($"Человек с ФИО {getFullName()}, адресом {Address} и датой рождения {DateOfBirth}")
+            Console.WriteLine($"Человек с ФИО {getFullName()}, адресом {Address} и датой рождения {DateOfBirth}");
         }
     }
 }
