@@ -17,7 +17,7 @@ namespace Practica7
         public TypeDevice Type { get; set; }
         public DateTime YearOfIssue { get; set; }
 
-        private Computer Computer { get; set; }
+        public Computer Divice { get; set; }
         public ComputingDevice(string name, TypeDevice type, DateTime yearOfIssue)
         {
             Name = name;
@@ -33,14 +33,15 @@ namespace Practica7
 
                 Computer computer = new Computer(display, processor, winchester);
 
-                Computer = computer;
-            }
+                Divice = computer;
+            } 
+            
         }
 
         public virtual void Print()
         {
             Console.WriteLine($"Вычислительное устройство с названием {Name} имеет тип {Type} и годом выпуска {YearOfIssue}");
-            Computer.Print();
+            Divice.Print();
         }
 
     }
