@@ -18,7 +18,7 @@ namespace Practica7
 
         public DateTime DateOfBirth { get; set; }
 
-        public Human(string lastName, string firstName, string patronymic, string address, DateOnly dateOfBirth)
+        public Human(string lastName, string firstName, string patronymic, string address, DateTime dateOfBirth)
         {
             LastName = lastName;
             FirstName = firstName;
@@ -29,12 +29,14 @@ namespace Practica7
 
         public string getFullName()
         {
-            return LastName + FirstName + Patronymic;
+            return $"{LastName} {FirstName} {Patronymic}";
         }
 
         public virtual void Print()
         {
             Console.WriteLine($"Человек с ФИО {getFullName()}, адресом {Address} и датой рождения {DateOfBirth}");
+           
+           
         }
     }
 }
