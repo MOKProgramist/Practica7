@@ -11,7 +11,7 @@ namespace Practica7
         public TypeUsers Type { get; set; }
         public Computer Computer { get; set; }
         
-        public Users(string lastName, string firstName, string patronymic, string address, DateOnly dateOfBirth, TypeUsers typeUsers, Computer computer) : base(lastName, firstName, patronymic, address, dateOfBirth)
+        public Users(string lastName, string firstName, string patronymic, string address, DateTime dateOfBirth, TypeUsers typeUsers, Computer computer) : base(lastName, firstName, patronymic, address, dateOfBirth)
         {
             Type = typeUsers;
             Computer = computer;
@@ -20,6 +20,8 @@ namespace Practica7
         public override void Print()
         {
             Console.WriteLine($"Пользователь с ФИО {getFullName()} с типом {Type}");
+            Console.WriteLine("Вот его компьютер:");
+            Computer.Print();
         }
     }
 
